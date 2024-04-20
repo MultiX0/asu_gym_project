@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+            :root {
+    --primary-color: #1E1E1E;
+    --primary-ligth: #c5c3c3;
+    --secondary-color: #8758FF;
+    --white: #ece1e1;
+}
+        body {
+           font-family: "Montserrat", sans-serif;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .header_title {
+            text-align: center;
+
+            font-family: "Montserrat", sans-serif;
+    color: var(--white);
+    overflow-x: hidden;
+    font-size: 45px;
+    margin-bottom: 2rem;
+        }
+        .header_subtitle{
+            text-align: center;
+            font-weight: bold;
+            color: var(--white);
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            font-size: 28px;
+            margin-bottom: 1rem;
+        }
+        .section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+       
+        .members_section {
+            text-align: center;
+            padding: 1rem;
+            margin: 1rem;
+  
+}
+
+.members_container {
+    display: block;
+    justify-content: center;
+    align-items: center; 
+    gap: 1rem;
+    
+
+}
+
+.members_card {
+    padding: 0.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    display:block;
+    background-color: #333; 
+    border-radius: 15px;
+    box-shadow:2px 2px 2px rgba(0, 0, 0, 0.411);
+    margin: 1rem;
+    text-align: center; 
+}
+
+.members_card p{
+    font-size: 13px;
+}
+
+a {
+    text-decoration: none;
+  }
+  
+nav {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__logo a {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+  }
+
+
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    
+  }
+  .link a {
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .link a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+  }
+  
+  .link a:hover::after {
+    width: 100%;
+  }
+  
+
+
+    </style>
+    </head>
+    <body>
+
+        <nav>
+            <div class="nav__logo">
+                <a href="index.html">Asu.Fit</a>
+            </div>
+            <ul class="nav__links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="reviews.html">Reviews</a></li>
+                <li class="link"><a href="subscriptions.html">Subscriptions</a></li>
+                <li class="link"><a href="contact_us.html">Contact Us</a></li>
+                <li class="link"><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        <h2 class="header_title">About Us</h2>
+        <p class="header_subtitle">Through the pain the other side is the
+            reward</p>
+
+        <div class="container">
+            <section class="section">
+                <h2>Asu Fit</h2>
+                <p> We are Ziad, Obaida, and Mohammed, the passionate minds
+                    behind the gym website you're experiencing. Our combined
+                    expertise and dedication have fueled the creation of this
+                    platform to empower your fitness journey.</p>
+            </section>
+            <section>
+                <h2>Our Mission</h2>
+                We believe that fitness should be accessible and enjoyable for
+                everyone .
+            </section>
+            <section>
+                <h1>Get In Touch</h1>
+                We're always striving to improve and provide the best possible
+                experience
+            </section>
+            <div class="members_section">
+                <h1 style="color: burlywood;">Our Team Members</h1>
+               
+                <div class="members_container">
+                    <div class="members_card">
+                        Mohammed
+                        <p>Developer</p> 
+                    </div>
+                    <div class="members_card">
+                        Ziad
+                        <p>Designer</p> 
+                    </div>
+                    <div class="members_card">
+                        Obaida
+                        <p>Product Manager</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

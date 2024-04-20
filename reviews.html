@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reviews</title>
+        <style>
+           @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+:root {
+--primary-color: #1E1E1E;
+--primary-ligth: #c5c3c3;
+--secondary-color: #8758FF;
+--white: #ece1e1;}
+body {
+           font-family: "Montserrat", sans-serif;
+            background-color: var(--primary-color);
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+        .header_title {
+            text-align: center;
+
+            font-family: "Montserrat", sans-serif;
+    color: var(--white);
+    overflow-x: hidden;
+    font-size: 45px;
+    margin-bottom: 2rem;
+        }
+        
+
+        .reviews-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); 
+            gap: 1.5rem; 
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto; 
+        }
+
+        .review-card {
+            background-color: var(--white); 
+            border-radius: 15px; 
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+            padding: 1.5rem;
+            transition: transform 0.3s; 
+        }
+
+        .review-card:hover {
+            transform: scale(1.05); 
+        }
+
+        .review-card h3 {
+            font-size: 20px; 
+            color: #333;
+        }
+
+        .review-card p {
+            font-size: 16px; 
+            line-height: 1.5; 
+            color: #555; 
+        }
+        a {
+    text-decoration: none;
+  }
+  
+nav {
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav__logo a {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+  }
+
+
+  .nav__links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    
+    
+  }
+  .link a {
+    position: relative;
+    padding-bottom: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white);
+  }
+  
+  .link a::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--secondary-color);
+    transition: 0.3s;
+  }
+  
+  .link a:hover::after {
+    width: 100%;
+  }
+  .header_subtitle{
+            text-align: center;
+            font-weight: bold;
+            color: var(--white);
+        }
+
+    </style>
+    </head>
+    <body>
+        <nav>
+            <div class="nav__logo">
+                <a href="index.html">Asu.Fit</a>
+            </div>
+            <ul class="nav__links">
+                <li class="link"><a href="index.html">Home</a></li>
+                <li class="link"><a href="#">Reviews</a></li>
+                <li class="link"><a href="subscriptions.html">Subscriptions</a></li>
+                <li class="link"><a href="contact_us.html">Contact Us</a></li>
+                <li class="link"><a href="about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+        <h2 class="header_title">Reviews</h2>
+        <p class="header_subtitle">Through the pain the other side is the
+            reward</p>
+        <div class="reviews-container">
+            <div class="review-card">
+                <h3>Transformative Workouts</h3>
+                <p>AsuFit has completely changed my perspective on fitness. The trainers are excellent, and the classes are both challenging and fun. I've never felt better!</p>
+            </div>
+            
+            <div class="review-card">
+                <h3>Top-Notch Equipment</h3>
+                <p>The equipment at AsuFit is top-of-the-line, with everything you could possibly need. It's always clean and well-maintained, which is something I really appreciate.</p>
+            </div>
+            
+            <div class="review-card">
+                <h3>Supportive Community</h3>
+                <p>The atmosphere at AsuFit is incredibly welcoming. Everyone is so supportive, from the staff to the members. It feels like a second family.</p>
+            </div>
+            
+            <div class="review-card">
+                <h3>Personalized Training</h3>
+                <p>The personal trainers at AsuFit are amazing. They tailor workouts to your individual needs and goals. I've seen incredible progress thanks to their guidance.</p>
+            </div>
+            
+            <div class="review-card">
+                <h3>Great Classes</h3>
+                <p>The class schedule at AsuFit is perfect for my busy lifestyle. There are so many options, from yoga to high-intensity interval training, and each class is fantastic.</p>
+            </div>
+            
+            <div class="review-card">
+                <h3>Exceptional Cleanliness</h3>
+                <p>One of the best things about AsuFit is how clean it is. The staff does an amazing job keeping everything spotless. It's one of the cleanest gyms I've been to.</p>
+            </div>
+            
+            <div class="review-card">
+                <h3>Awesome Staff</h3>
+                <p>The staff at AsuFit is always friendly and ready to help. They make you feel welcome from the moment you walk in, which sets a positive tone for every workout.</p>
+            </div>
+            
+            <div class="review-card">
+                <h3>Best Gym in Town</h3>
+                <p>I've tried many gyms, but AsuFit is by far the best. The facilities, the trainers, and the overall vibe are unbeatable. I highly recommend it to anyone looking to improve their fitness.</p>
+            </div>
+            
+        </div>
+    </body>
+</html>
