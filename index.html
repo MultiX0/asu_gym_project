@@ -34,6 +34,9 @@
                 <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="subscription_form.html">Subscription Form</a>
+            </li>
+              <li class="nav-item">
                 <a class="nav-link" href="reviews.html">Reviews</a>
               </li>
               <li class="nav-item">
@@ -65,15 +68,15 @@
               fitness goals.
             </div>
             <a href="subscriptions.html">
-              <button class="btn btn-primary" id="btn-size">Start Now</button>
+              <button class="btn btn-primary" id="btn-size">Start
+                Today!</button>
             </a>
           </div>
-
+          <div class="col-12 text-center text-white mt-4" id="date_header"></div>
         </div>
       </header>
 
-      <h4 class="col-12 text-center text-white">interesting facts</h4>
-
+      <h4 class="col-12 text-center text-white mt-0">interesting facts</h4>
 
       <section class="types__container container py-5">
         <div class="row">
@@ -169,6 +172,22 @@
         src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+
+      <script>
+
+         function get_date(){
+          var date_now = new Date().toLocaleString();
+          var date_header = document.getElementById("date_header");
+        
+          var date_body = `<h4>${date_now}</h4>`;
+          date_header.innerHTML = date_body;
+         }
+
+         get_date();
+
+         setInterval(()=>{get_date();},1000);
+    
+        </script>
     </body>
 
   </html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Subscription Form</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="subscription_form_style.css">
+
+        <style>
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+  </style>
+    </head>
+    <body>
+
+        <header class="header__container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Asu.Fit</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Subscription
+                                    Form</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="reviews.html">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="contact_us.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html">About
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-12 mt-3 text-center text-white">
+                <h2 class="header_title" id="header_title">Subscription
+                    Form</h2>
+                <p class="header_p" id="header_p">Subscribe to unlock exclusive
+                    access to our gym's top-notch facilities and expert
+                    training. Choose from flexible membership plans designed to
+                    fit your schedule and goals. Start your fitness journey with
+                    us today!</p>
+            </div>
+        </header>
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-12 col-md-6">
+
+                    <form action="#">
+
+                        <div class="mb-3">
+
+                            <label for="name" class="form-label"
+                                style="color: #cecece;">Name</label>
+
+                            <input type="text" class="form-control"
+                                id="name"
+                                required>
+                            <label for="name" class="name_error mt-3"
+                                style="color: red;" id="name_error"></label>
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label for="age" class="form-label"
+                                style="color: #cecece;">Age</label>
+
+                            <input type="number" class="form-control"
+                                id="age"
+                                required>
+                            <label class="age_error mt-3"
+                                style="color: red;" id="age_error"></label>
+
+                        </div>
+
+                        <label for="email" class="form-label"
+                            style="color: #cecece;">Select Your Gender</label>
+                        <br>
+                        <div class="d-flex flex-wrap text-white">
+                            <div class="form-check form-check-inline me-3">
+                                <input class="form-check-input" type="radio"
+                                    name="gender" id="male" value="male"
+                                    >
+                                <label class="form-check-label"
+                                    for="male">Male</label>
+                            </div>
+                            <div class="form-check form-check-inline me-3">
+                                <input class="form-check-input" type="radio"
+                                    name="gender" id="female" value="female">
+                                <label class="form-check-label"
+                                    for="female">Female</label>
+                            </div>
+                        </div>
+
+                        <label for="name" class="gender_error mb-2"
+                            style="color: red;" id="gender_error"></label>
+                    </form>
+
+                </div>
+
+                <div class="col-12 col-md-6">
+
+                    <form action="#">
+
+                        <div class="mb-3">
+
+                            <label for="name" class="form-label"
+                                style="color: #cecece;">Email</label>
+
+                            <input type="email" class="form-control"
+                                id="email"
+                                required>
+                            <label for="email" class="email_error mt-2"
+                                style="color: red;" id="email_error"></label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label"
+                                style="color: #cecece;">Select Location</label>
+                            <br>
+                            <select name="location" id="location"
+                                class="form-select w-100">
+                                <option value="null">Select Your
+                                    Location</option>
+                                <option value="shafa-badran">Shafa
+                                    Badran</option>
+                                <option value="al-jubaiha">Al Jubaiha</option>
+                                <option value="abu-nseir">Abu Nseir</option>
+                            </select>
+                            <label for="name" class="location_error mt-2"
+                                style="color: red;" id="location_error"></label>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label"
+                                style="color: #cecece;">Select Tenure</label>
+                            <br>
+                            <select name="tenure" id="tenure"
+                                class="form-select w-100">
+                                <option value="null">Select The Tenure You
+                                    Desire</option>
+                                <option value="1">1 Day</option>
+                                <option value="7">7 Day</option>
+                                <option value="30">1 Month</option>
+                                <option value="90">3 Months</option>
+                                <option value="180">6 Months</option>
+                                <option value="365">1 Year</option>
+                            </select>
+                            <label for="name" class="tenure_error mt-2"
+                                style="color: red;" id="tenure_error"></label>
+                        </div>
+                    </form>
+
+                </div>
+
+                <div class="col-12 col-sm-12 d-grid gap-2 mb-3">
+
+                    <button type="button" class="btn btn-primary"
+                        id="submit_button"
+                        onclick="get_information()">Submit</button>
+
+                </div>
+
+                <div class="d-flex flex-wrap text-white">
+                    <div class="col-12 col-sm-6 d-b gap-2 mb-5">
+
+                        <label for="message" class="form-label"
+                            style="color: #cecece;">Subscription
+                            Informations</label>
+
+                        <textarea class="form-control" id="informations"
+                            rows="8"
+                            required></textarea>
+
+                    </div>
+                    <div
+                        class="col-12 col-sm-6 d-flex justify-content-center align-items-center text-center text-white"
+                        id="date_header">
+                    </div>
+
+                    <script
+                        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                        crossorigin="anonymous"></script>
+
+                    <script>
+
+     function get_date(){
+      var date_now = new Date().toLocaleString();
+      var date_header = document.getElementById("date_header");
+    
+      var date_body = `<h4>${date_now}</h4>`;
+      date_header.innerHTML = date_body;
+     }
+
+     get_date();
+
+     setInterval(()=>{get_date();},1000);
+
+
+     
+     function get_information(){
+
+        let daily_cost = 5;
+
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let age = parseInt(document.getElementById("age").value.trim());
+        let gender_selection = document.getElementsByName("gender");
+        let selected_gender = "";
+
+
+        //error labels
+        let name_error = document.getElementById("name_error");
+        let age_error = document.getElementById("age_error");
+        let gender_error = document.getElementById("gender_error");
+        let email_error = document.getElementById("email_error");
+        let location_error = document.getElementById("location_error");
+        let tenure_error = document.getElementById("tenure_error");
+
+        //the text area
+        let text_area = document.getElementById("informations");
+
+
+
+        for (let i = 0; i < gender_selection.length; i++) {
+            if (gender_selection[i].checked) {
+                selected_gender = gender_selection[i].value;
+                break;
+            }
+        }
+
+        let selected_location = document.getElementById("location").value;
+        let selected_tenure = document.getElementById("tenure").value;
+        
+        if (name.length != 0 && email.length != 0 && (age >= 8) && selected_gender.length != 0 && selected_location != "null" && selected_tenure != "null") {
+            name_error.innerHTML = "";
+            email_error.innerHTML = "";
+            age_error.innerHTML = "";
+            gender_error.innerHTML = "";
+            location_error.innerHTML = "";
+            tenure_error.innerHTML = "";
+
+            let total_cost = 0;
+
+            let int_tenure = parseInt(selected_tenure);
+
+            if(int_tenure>30){
+                let amount = daily_cost*int_tenure;
+                let discount_amount = amount * 0.05;
+
+                total_cost = amount - discount_amount;
+            }else{
+                total_cost = daily_cost*int_tenure;
+            }
+
+
+            let previous_text = text_area.value;
+
+            let location_value = document.getElementById("location");
+            let location_option = location_value.options[location_value.selectedIndex].text;
+
+            let tenure_value = document.getElementById("tenure");
+            let tenure_option = tenure_value.options[tenure_value.selectedIndex].text;
+
+            let area_text = `Name: ${name}\nEmail: ${email}\nAge: ${age}\nGender: ${selected_gender}\nLocation: ${location_option}\nTenure: ${tenure_option}\nTotal Cost: ${total_cost}$\n`;
+
+            text_area.textContent = previous_text + area_text
+
+
+            console.log("Name:", name);
+            console.log("Email:", email);
+            console.log("Age:", age);
+            console.log("Gender:", selected_gender);
+            console.log("Location:", selected_location);
+            console.log("Tenure:", selected_tenure);
+
+
+        } else {
+            if(name.length == 0){
+                name_error.innerHTML = "invalid input!";
+            }else{
+                name_error.innerHTML = "";
+            }
+            if(email.length == 0){
+                email_error.innerHTML = "invalid input!";
+            }else{
+                email_error.innerHTML = "";
+            }
+            if((age < 8)||!age){
+                age_error.innerHTML = "The Age Must be equal or greater than 8 !";
+            }else{
+                age_error.innerHTML = "";
+            }
+            if(selected_gender.length == 0){
+                gender_error.innerHTML = "Please Select Your Gender";
+            }else{
+                gender_error.innerHTML = "";
+            }
+            if(selected_location == "null"){
+                location_error.innerHTML = "invalid location";
+            }else{
+                location_error.innerHTML = "";
+            }
+            if(selected_tenure == "null"){
+                tenure_error.innerHTML = "invalid tenure";
+            }else{
+                tenure_error.innerHTML = "";
+            }
+            console.log("Something is missing or invalid.");
+        }
+
+
+        
+     }
+
+    </script>
+                </body>
+            </html>
