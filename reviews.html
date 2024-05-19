@@ -3,6 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
         <title>Reviews</title>
         <style>
            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
@@ -12,23 +17,63 @@
 --primary-ligth: #c5c3c3;
 --secondary-color: #8758FF;
 --white: #ece1e1;}
-body {
-           font-family: "Montserrat", sans-serif;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        .header_title {
-            text-align: center;
 
-            font-family: "Montserrat", sans-serif;
-    color: var(--white);
-    overflow-x: hidden;
-    font-size: 45px;
-    margin-bottom: 2rem;
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.header__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+@media (max-width:767px) {
+            #header_title{
+                font-size: 2rem;
+                padding: 0;
+                margin: 0;
+            }
+            #header_subtitle{
+                font-size: 0.75rem;
+                padding-top: 10px;
+            }
         }
-        
 
         .reviews-container {
             display: grid;
@@ -119,21 +164,49 @@ nav {
     </style>
     </head>
     <body>
-        <nav>
-            <div class="nav__logo">
-                <a href="index.html">Asu.Fit</a>
+        <header class="header__container">
+
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Asu.Fit</a>
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav" aria-controls="navbarNav"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="#">Reviews</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="subscriptions.html">Subscriptions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link"
+                                    href="contact_us.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about_us.html">About
+                                    Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="col-12 mt-3 text-center">
+                <h2 class="header_title" id="header_title" style="color: var(--white);">Reviews</h2>
+                <p class="header_subtitle" id="header_subtitle">Through the pain the other side is the
+                    reward</p>
             </div>
-            <ul class="nav__links">
-                <li class="link"><a href="index.html">Home</a></li>
-                <li class="link"><a href="#">Reviews</a></li>
-                <li class="link"><a href="subscriptions.html">Subscriptions</a></li>
-                <li class="link"><a href="contact_us.html">Contact Us</a></li>
-                <li class="link"><a href="about_us.html">About Us</a></li>
-            </ul>
-        </nav>
-        <h2 class="header_title">Reviews</h2>
-        <p class="header_subtitle">Through the pain the other side is the
-            reward</p>
+        </header>
+       
         <div class="reviews-container">
             <div class="review-card">
                 <h3>Transformative Workouts</h3>
@@ -177,4 +250,8 @@ nav {
             
         </div>
     </body>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
 </html>

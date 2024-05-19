@@ -3,36 +3,92 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
         <title>About Us</title>
         <style>
-            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
-            :root {
+
+:root {
     --primary-color: #1E1E1E;
     --primary-ligth: #c5c3c3;
     --secondary-color: #8758FF;
     --white: #ece1e1;
 }
-        body {
-           font-family: "Montserrat", sans-serif;
-            background-color: var(--primary-color);
-            color: #ffffff;
-            margin: 0;
-            padding: 0;
-        }
-        .header_title {
-            text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-            font-family: "Montserrat", sans-serif;
-    color: var(--white);
-    overflow-x: hidden;
-    font-size: 45px;
-    margin-bottom: 2rem;
-        }
-        .header_subtitle{
-            text-align: center;
-            font-weight: bold;
-            color: var(--white);
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-color);
+  overflow-x: hidden;
+  color: var(--white);
+}
+
+a{
+  text-decoration: underline;
+  color: #8758FF;
+}
+
+.header__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.navbar {
+  padding: 1rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.header__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem;
+}
+
+@media (max-width:767px) {
+            #header_title{
+                font-size: 2rem;
+                padding: 0;
+                margin: 0;
+            }
+            #btn-size{
+              padding: 0.5rem 2rem;
+              font-size: 0.75rem;
+              text-align: center;
+              display: flex;
+              font-weight: 600;
+              border-radius: 10px;
+              justify-content: center;
+            }
+            #contact-info{
+              margin: 0; 
+              padding: 0;
+            }
         }
         .container {
             max-width: 1200px;
@@ -51,22 +107,6 @@
             line-height: 1.6;
         }
        
-        .members_section {
-            text-align: center;
-            padding: 1rem;
-            margin: 1rem;
-  
-}
-
-.members_container {
-    display: block;
-    justify-content: center;
-    align-items: center; 
-    gap: 1rem;
-    
-
-}
-
 .members_card {
     padding: 0.5rem;
     font-size: 18px;
@@ -83,78 +123,85 @@
     font-size: 13px;
 }
 
-a {
-    text-decoration: none;
-  }
-  
-nav {
-    margin-left: 2rem;
-    margin-right: 2rem;
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav__logo a {
-    font-size: 1.75rem;
-    font-weight: 700;
-    color: var(--secondary-color);
-  }
-
-
-  .nav__links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    gap: 2rem;
-    
-    
-  }
-  .link a {
-    position: relative;
-    padding-bottom: 5px;
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: var(--white);
-  }
-  
-  .link a::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color: var(--secondary-color);
-    transition: 0.3s;
-  }
-  
-  .link a:hover::after {
-    width: 100%;
-  }
-  
-
 
     </style>
     </head>
     <body>
 
-        <nav>
-            <div class="nav__logo">
-                <a href="index.html">Asu.Fit</a>
-            </div>
-            <ul class="nav__links">
-                <li class="link"><a href="index.html">Home</a></li>
-                <li class="link"><a href="reviews.html">Reviews</a></li>
-                <li class="link"><a href="subscriptions.html">Subscriptions</a></li>
-                <li class="link"><a href="contact_us.html">Contact Us</a></li>
-                <li class="link"><a href="#">About Us</a></li>
-            </ul>
-        </nav>
-        <h2 class="header_title">About Us</h2>
-        <p class="header_subtitle">Through the pain the other side is the
-            reward</p>
+        <header class="header__container">
 
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+
+                <div class="container-fluid">
+
+                    <a class="navbar-brand" href="index.html">Asu.Fit</a>
+
+                    <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false"
+                        aria-label="Toggle navigation">
+
+                        <span class="navbar-toggler-icon"></span>
+
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+
+                        <ul class="navbar-nav ms-auto">
+
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="index.html">Home</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link" href="reviews.html">Reviews</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="subscriptions.html">Subscriptions</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="contact_us.html">Contact Us</a>
+
+                            </li>
+
+                            <li class="nav-item">
+
+                                <a class="nav-link"
+                                    href="#">About
+
+                                    Us</a>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </nav>
+
+            <div class="container mt-3">
+
+                <h2 class="header_title text-center text-white">About Us</h2>
+                <p class="header_subtitle text-center">Through the pain the other side is the
+                    reward</p>
+            </div>
+
+        </header>    
         <div class="container">
             <section class="section">
                 <h2>Asu Fit</h2>
@@ -163,34 +210,39 @@ nav {
                     expertise and dedication have fueled the creation of this
                     platform to empower your fitness journey.</p>
             </section>
-            <section>
+            <section class="col-12 mt-5">
                 <h2>Our Mission</h2>
                 We believe that fitness should be accessible and enjoyable for
                 everyone .
             </section>
-            <section>
+            <section class="col-12 mt-5">
                 <h1>Get In Touch</h1>
                 We're always striving to improve and provide the best possible
                 experience
             </section>
             <div class="members_section">
-                <h1 style="color: burlywood;">Our Team Members</h1>
-               
-                <div class="members_container">
-                    <div class="members_card">
-                        Mohammed
-                        <p>Developer</p> 
-                    </div>
-                    <div class="members_card">
-                        Ziad
-                        <p>Designer</p> 
-                    </div>
-                    <div class="members_card">
-                        Obaida
-                        <p>Product Manager</p> 
-                    </div>
+                <h1 class="text-center text-burlywood" style="margin-top: 1em;">Our Team Members</h1>
+                <div class="members_container row justify-content-center">
+                  <div class="members_card col-md-4 col-sm-6 text-center mb-3">
+                    <h3>Mohammed</h3>
+                    <p>Developer</p>
+                  </div>
+                  <div class="members_card col-md-4 col-sm-6 text-center mb-3">
+                    <h3>Ziad</h3>
+                    <p>Designer</p>
+                  </div>
+                  <div class="members_card col-md-4 col-sm-6 text-center mb-3">
+                    <h3>Obaida</h3>
+                    <p>Product Manager</p>
+                  </div>
                 </div>
+              </div>
+              
             </div>
         </div>
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
     </body>
 </html>

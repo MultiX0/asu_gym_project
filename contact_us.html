@@ -2,57 +2,188 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="contact_us.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contact Us</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="contact_us.css">
     </head>
     <body>
-        <div class="container"> 
-            <nav>
-                <div class="nav__logo">
-                    <a href="index.html">Asu.Fit</a>
-                </div>
-                <ul class="nav__links">
-                    <li class="link"><a href="index.html">Home</a></li>
-                    <li class="link"><a href="reviews.html">Reviews</a></li>
-                    <li class="link"><a href="subscriptions.html">Subscriptions</a></li>
-                    <li class="link"><a href="#">Contact Us</a></li>
-                    <li class="link"><a href="about_us.html">About Us</a></li>
-                </ul>
-            </nav>
-            <div>
-                <h2>Contact Us</h2>
-                <form action="#">
-                    <div>
-                        <label id="name" class="labels">Name</label>
-                        <input type="text" id="name" required class="inputs">
-                    </div>
-                    <div>
-                        <label id="email" class="labels">Email</label>
-                        <input type="email" required class="inputs">
-                    </div>
-                    <div>
-                        <label id="message" class="labels">Message</label>
-                        <textarea id="message" required class="message_area"></textarea>
-                    </div>
-                    <input type="submit" value="Send Message" class="button">
-                    
-                    <div class="contact-info">
-                        <a href="mailto:support@gmail.com" class="info_section">Email: support@gmail.com</a>
-                        <a href="tel:+962000000000" class="info_section">Phone: +962000000000</a>
-                        <a href="#" class="info_section">Address: Shafa-badran asu</a>
-                    </div>
-                </form>
-            </div>
-        </div> 
+        <div class="container mt-0">
+            <header class="header__container">
 
-        <footer class="footer"> 
-            <h3>Follow Us</h3>
-            <ul class="social-links">
-                <li><a href="https://www.facebook.com/yourpage">Facebook</a></li>
-                <li><a href="https://www.twitter.com/yourpage">Twitter</a></li>
-                <li><a href="https://www.instagram.com/yourpage">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/yourpage">LinkedIn</a></li>
-            </ul>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+
+                    <div class="container-fluid">
+
+                        <a class="navbar-brand" href="index.html">Asu.Fit</a>
+
+                        <button class="navbar-toggler" type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav"
+                            aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+
+                            <span class="navbar-toggler-icon"></span>
+
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarNav">
+
+                            <ul class="navbar-nav ms-auto">
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link"
+                                        href="index.html">Home</a>
+
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link" href="reviews.html">Reviews</a>
+
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link"
+                                        href="subscriptions.html">Subscriptions</a>
+
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link"
+                                        href="#">Contact Us</a>
+
+                                </li>
+
+                                <li class="nav-item">
+
+                                    <a class="nav-link"
+                                        href="about_us.html">About
+
+                                        Us</a>
+
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </nav>
+
+                <div class="container mt-3">
+
+                    <h2 class="header_title text-center text-white">Contact
+                        Us</h2>
+
+                </div>
+
+            </header>
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-12 col-md-6 mx-auto">
+
+                        <form action="#">
+
+                            <div class="mb-3">
+
+                                <label for="name" class="form-label"
+                                    style="color: #cecece;">Name</label>
+
+                                <input type="text" class="form-control"
+                                    id="name"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label for="email" class="form-label"
+                                    style="color: #cecece;">Email</label>
+
+                                <input type="email" class="form-control"
+                                    id="email"
+                                    required>
+
+                            </div>
+
+                            <div class="mb-3">
+
+                                <label for="message" class="form-label"
+                                    style="color: #cecece;">Message</label>
+
+                                <textarea class="form-control" id="message"
+                                    rows="5"
+                                    required></textarea>
+
+                            </div>
+
+                            <div class="col-12 col-sm-12 d-grid gap-2">
+
+                                <button type="submit" class="btn btn-primary"
+                                    id="btn-size">Send Message</button>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="col-12 col-md-6 mt-4 mt-md-0">
+
+                        <div class="contact-info" id="contact-info">
+
+                            <p class="info_section"><a
+                                    href="mailto:support@gmail.com">Email:
+
+                                    support@gmail.com</a></p>
+
+                            <p class="info_section"><a
+                                    href="tel:+962000000000">Phone:
+
+                                    +962000000000</a></p>
+
+                            <p class="info_section">Address: Shafa-badran
+                                asu</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <footer class="footer fixed-bottom mt-5" id="my_footer">
+            <div class="container">
+                <h3 class="text-center">Follow Us</h3>
+                <ul class="social-links text-center">
+                    <li><a
+                            href="https://www.facebook.com/yourpage">Facebook</a></li>
+                    <li><a
+                            href="https://www.twitter.com/yourpage">Twitter</a></li>
+                    <li><a
+                            href="https://www.instagram.com/yourpage">Instagram</a></li>
+                    <li><a
+                            href="https://www.linkedin.com/yourpage">LinkedIn</a></li>
+                </ul>
+            </div>
         </footer>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
     </body>
 </html>
